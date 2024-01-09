@@ -23,6 +23,11 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { SobreNosotrosComponent } from './componentes/sobre-nosotros/sobre-nosotros.component';
+import { TiendaComponent } from './componentes/tienda/tienda.component';
+import { ComprasComponent } from './paginas/compras/compras.component';
+import { PagoComponent } from './componentes/pago/pago.component';
+import { TarjetaComponent } from './componentes/tarjeta/tarjeta.component';
+import { CriptomonedaComponent } from './componentes/criptomoneda/criptomoneda.component';
 
 registerLocaleData(en);
 
@@ -38,7 +43,12 @@ registerLocaleData(en);
     CategoriaPrendasComponent,
     CatalogoComponent,
     BuscarProductoComponent,
-    SobreNosotrosComponent
+    SobreNosotrosComponent,
+    TiendaComponent,
+    ComprasComponent,
+    PagoComponent,
+    TarjetaComponent,
+    CriptomonedaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+<div class="form-container">
+    <div class="form-group">
+      <label for="nombreTitular">Nombre del titular de la tarjeta:</label>
+      <input type="text" id="nombreTitular" class="double-width">
+    </div>
+    
+    <div class="form-group">
+      <div class="split">
+        <label for="fechaCaducidad">Fecha de caducidad:</label>
+        <input type="text" id="fechaCaducidad">
+      </div>
+      <p></p>
+      <div class="split">
+        <label for="codigoSeguridad">Código de seguridad:</label>
+        <input type="text" id="codigoSeguridad">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="pais">País:</label>
+      <input type="text" id="pais">
+    </div>
+    
+    <button class="buy-button" (click)="showPopup()">Comprar</button>
+  </div>
+  
+  <div class="popup" *ngIf="showPopupFlag">
+    <div class="popup-content">
+      <p>Felicitaciones por su compra</p>
+      <button class="ok-button" (click)="navigateToSpecificPage()">OK</button>
+    </div>
+  </div>

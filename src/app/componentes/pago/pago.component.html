@@ -1,0 +1,17 @@
+<div class="payment-container">
+  <h2>Seleccione un método de pago</h2>
+
+  <button class="payment-method" (click)="mostrarComponente('tarjeta')">
+    <img src="./assets/imagenes/tarjeta.png" alt="Icono Tarjeta de crédito"> Tarjeta de crédito
+  </button>
+  
+  <app-tarjeta *ngIf="mostrarTarjeta"></app-tarjeta>
+
+  <button class="payment-method" (click)="mostrarComponente('criptomoneda')">
+    <img src="./assets/imagenes/bitcoin.png" alt="Icono Criptomoneda"> Criptomoneda
+  </button>
+  
+  <app-criptomoneda *ngIf="mostrarCriptomoneda"></app-criptomoneda>
+
+  <p></p>
+</div>

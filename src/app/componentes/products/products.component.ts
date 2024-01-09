@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductosService } from '../servicios/producto_tienda'
 
 @Component({
   selector: 'app-products',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
+  
 
   isVisible = false;
   items_productos = [
@@ -380,7 +382,7 @@ export class ProductsComponent {
     ]
   }
   
-  constructor() {}
+  constructor(private productosService: ProductosService) {}
   
   changeDates(cadena:string):void{
     switch(cadena) {
@@ -403,10 +405,11 @@ export class ProductsComponent {
     this.isVisible = true;
     console.log(producto) 
     this.producto_modal = producto
+    this.productosService.setProducto(producto);
   }
 
   handleOk(): void {
-    console.log('Button ok clicked!');
+    console.log('Button CARRITO clicked!');
     this.isVisible = false;
   }
 

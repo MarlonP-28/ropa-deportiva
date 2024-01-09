@@ -1,0 +1,19 @@
+<div class="product-container">
+    <div class="product-details">
+      <h2 style="font-size: 120%;">{{ productoSeleccionado?.nombre }}</h2>
+      <div class="image-container">
+        <img [src]="productoSeleccionado?.imgenes[0]" alt="Product Image">
+      </div>
+      <p style="font-size: 120%;">Precio: {{ productoSeleccionado?.precio }}</p>
+      <p style="font-size: 120%;">Color: {{ productoSeleccionado?.color }}</p>
+      <p style="font-size: 120%;">Talla: {{ productoSeleccionado?.talla }}</p>
+    </div>
+  
+    <div class="buttons">
+      <button (click)="cancel()">Cancelar</button>
+      <button (click)="pay()">Pagar</button>
+    </div>    
+  </div>
+  <div *ngIf="showPayment">
+    <app-pago></app-pago>
+  </div>

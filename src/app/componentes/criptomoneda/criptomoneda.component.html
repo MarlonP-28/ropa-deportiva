@@ -1,0 +1,33 @@
+<div class="crypto-form">
+    <h2>Compra con Criptomoneda</h2>
+  
+    <div class="form-field">
+      <label for="moneda">Moneda:</label>
+      <select id="moneda">
+        <option value="bitcoin">Bitcoin</option>
+        <option value="ethereum">Ethereum</option>
+        <option value="tether">Tether</option>
+        <option value="binance-coin">Binance Coin</option>
+        <option value="solana">Solana</option>
+      </select>
+    </div>
+  
+    <div class="form-field">
+      <label for="binance-id">Binance ID:</label>
+      <input type="text" id="binance-id" placeholder="Ingrese su Binance ID">
+    </div>
+  
+    <div class="form-field">
+      <label for="codigo-seguridad">Código de seguridad:</label>
+      <input type="password" id="codigo-seguridad" placeholder="Ingrese el código de seguridad">
+    </div>
+  
+    <button class="buy-button" (click)="showPopup()">Comprar</button>
+  </div>
+  
+  <div class="popup" [ngClass]="{'show': showPopupFlag}">
+    <div class="popup-content">
+      <p>Felicitaciones por su compra</p>
+      <button class="ok-button" (click)="navigateToSpecificPage()">OK</button>
+    </div>
+  </div>
