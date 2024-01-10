@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "./dist/front-mom-store",
+    "public": "dist/front-mom-store",
     "ignore": [
       "firebase.json",
       "**/.*",
