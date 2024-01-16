@@ -1,0 +1,6 @@
+projectKey=ropa-deportiva
+serverUrl=http://localhost:9000
+serverVersion=10.3.0.82913
+dashboardUrl=http://localhost:9000/dashboard?id=ropa-deportiva
+ceTaskId=AY0QJnEEI4UrZGzB2b_g
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AY0QJnEEI4UrZGzB2b_g
